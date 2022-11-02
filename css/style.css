@@ -1,0 +1,146 @@
+﻿*{
+    box-sizing: border-box;
+}
+
+/* 文字スライド&movie */
+
+#TextFlowB {
+    /* margin : 40px auto 0; */
+    width : 100%;
+    font-size: 100px;
+    text-align : center;
+    /* font-family: "Roboto Serif",serif; */
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    /* font-weight: 600; */
+    letter-spacing: 0.1em;
+    overflow :hidden;
+    background-color: #002d6c;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    #TextFlowB .text_flow_b{
+    margin:0;
+    display : inline-block;
+    /* padding-left: 100%; */
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollSample01 150s linear infinite;
+    /* color: #002d6c; */
+    color: #fff;
+    margin-bottom: 40px;
+    }
+    #TextFlowB .text_flow_b span{
+    color: #c10e3c;
+    font-weight: bold;
+    margin-bottom: 40px;
+    }
+    @keyframes scrollSample01{
+    0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+    }
+    #TextFlowB .text_flow_c{
+    margin:0;
+    display : inline-block;
+    /* padding-right: 100%; */
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollSample03 150s linear infinite;
+    /* color: #c10e3c; */
+    color: #fff;
+    /* opacity: 0.5; */
+    }
+    @keyframes scrollSample03{
+        from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0%);
+          }
+    }
+
+#MovieDf{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+#MovieFlow {
+    display: flex;
+  align-items: center;
+    /* height: 500px; */
+    overflow: hidden;
+    width: 50%;
+
+    }
+    #MovieWrap{
+    display: flex;
+    animation: loop-slide 25s infinite linear 1s both;
+    }
+    @keyframes loop-slide{
+        0% { transform: translateX(0) }
+        100% { transform: translateX(-100%)}
+    }
+    #MovieWrap video{
+        width: 230px;
+        margin-left: 5px;
+    }
+    #MovieFlowText{
+        width: 40%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    #MovieFlowText p{
+        font-size: 18px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+        font-family: 'Sawarabi Gothic', sans-serif;
+    }
+    #MovieFlowText h3{
+        font-size: 60px;
+        font-family: 'Nothing You Could Do', cursive;
+        letter-spacing: 1;
+    }
+
+    @media(max-width:767px){
+     #TextFlowB {
+    margin : 40px auto;
+    width : 100%;
+    font-size : 5em;
+    text-align : center;
+    font-family: "Roboto Serif",serif;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    }
+    #TextFlowB p{
+    margin:0;
+    display : inline-block;
+    padding-left: 100%;
+    white-space : nowrap;
+    line-height : 1em;
+    animation : scrollSample01 30s linear infinite;
+    }
+    @keyframes scrollSample01{
+    0% { transform: translateX(0)}
+    100% { transform: translateX(-100%)}
+    }
+#MovieDf{
+    display: block;
+    margin-top: 40px;
+}
+#MovieFlow {
+    width: 100%;
+    }
+    #MovieFlowText{
+        max-width: 767px;
+        width: 100%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+     #MovieFlowText p{
+        font-size: 16px;
+    }
+     #MovieFlowText h3{
+        font-size: 40px;
+    }
+    }
